@@ -7,11 +7,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PostListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        NetworkService().getPostList { postDetails in
+            print(postDetails)
+        }
+       
     }
 
 
