@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PostListViewController.swift
 //  ApiNewsTest1604
 //
 //  Created by admin on 16.04.2022.
@@ -15,7 +15,7 @@ class PostListViewController: UIViewController {
         NetworkService().getPostList { postDetails in
             print(postDetails)
         }
-       
+
     }
 
 
