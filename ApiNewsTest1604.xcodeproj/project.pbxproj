@@ -14,7 +14,9 @@
 		8472D6FC280AF6FA0025D190 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472D6FB280AF6FA0025D190 /* Model.swift */; };
 		8472D6FE280AF7290025D190 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472D6FD280AF7290025D190 /* Presenter.swift */; };
 		8472D700280AF7980025D190 /* NetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472D6FF280AF7980025D190 /* NetService.swift */; };
-		8472D703280B01C50025D190 /* PostList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8472D702280B01C50025D190 /* PostList.storyboard */; };
+		8472D705280C0F0E0025D190 /* PostListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472D704280C0F0E0025D190 /* PostListViewCell.swift */; };
+		8474A22B280EF04A00DC54C6 /* PostListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8474A22A280EF04A00DC54C6 /* PostListDelegate.swift */; };
+		8474A22C280F20CA00DC54C6 /* PostList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8474A22E280F20CA00DC54C6 /* PostList.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +29,9 @@
 		8472D6FB280AF6FA0025D190 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		8472D6FD280AF7290025D190 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		8472D6FF280AF7980025D190 /* NetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetService.swift; sourceTree = "<group>"; };
-		8472D702280B01C50025D190 /* PostList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostList.storyboard; sourceTree = "<group>"; };
+		8472D704280C0F0E0025D190 /* PostListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewCell.swift; sourceTree = "<group>"; };
+		8474A22A280EF04A00DC54C6 /* PostListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListDelegate.swift; sourceTree = "<group>"; };
+		8474A22D280F20CA00DC54C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PostList.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +69,6 @@
 				8472D6F9280AF6AF0025D190 /* Presenters */,
 				8472D6F8280AF64B0025D190 /* Models */,
 				8472D6E4280AF60B0025D190 /* AppDelegate.swift */,
-				8472D6E8280AF60B0025D190 /* PostListViewController.swift */,
 				8472D6ED280AF60D0025D190 /* Assets.xcassets */,
 				8472D6EF280AF60D0025D190 /* LaunchScreen.storyboard */,
 				8472D6F2280AF60D0025D190 /* Info.plist */,
@@ -93,6 +96,9 @@
 		8472D6FA280AF6C60025D190 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8472D6E8280AF60B0025D190 /* PostListViewController.swift */,
+				8472D704280C0F0E0025D190 /* PostListViewCell.swift */,
+				8474A22A280EF04A00DC54C6 /* PostListDelegate.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -100,7 +106,7 @@
 		8472D701280B01A00025D190 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				8472D702280B01C50025D190 /* PostList.storyboard */,
+				8474A22E280F20CA00DC54C6 /* PostList.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -164,7 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8472D6F1280AF60D0025D190 /* LaunchScreen.storyboard in Resources */,
-				8472D703280B01C50025D190 /* PostList.storyboard in Resources */,
+				8474A22C280F20CA00DC54C6 /* PostList.storyboard in Resources */,
 				8472D6EE280AF60D0025D190 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,10 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8474A22B280EF04A00DC54C6 /* PostListDelegate.swift in Sources */,
 				8472D6E9280AF60B0025D190 /* PostListViewController.swift in Sources */,
 				8472D6E5280AF60B0025D190 /* AppDelegate.swift in Sources */,
 				8472D6FC280AF6FA0025D190 /* Model.swift in Sources */,
 				8472D6FE280AF7290025D190 /* Presenter.swift in Sources */,
+				8472D705280C0F0E0025D190 /* PostListViewCell.swift in Sources */,
 				8472D700280AF7980025D190 /* NetService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +201,14 @@
 				8472D6F0280AF60D0025D190 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8474A22E280F20CA00DC54C6 /* PostList.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8474A22D280F20CA00DC54C6 /* Base */,
+			);
+			name = PostList.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
